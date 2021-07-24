@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#firstNav {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 0 3px 10px;
+  width: 100%;
+  height: 100px;
+}
+
+#navImg {
+  background-color: black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+#navImg:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px yellow;
+}
+
+#brandName {
+  position: absolute;
+  color: white;
+  left: 105px;
+}
+
+#webLink {
+  position: absolute;
+  left: 105px;
+  top: 40px;
+}
+
+#webLink a {
+  text-decoration: none;
+  color: gray;
+}
+
+#webLink a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#followButton {
+  position: relative;
+  background-color: lightgreen;
+  border-radius: 2px;
+  border: none;
+  left: 6px;
+  top: 60px;
+}
+
+#followButton:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+#followButton:active {
+  transform: translateY(1px);
+  background-color: green;
+  color: white;
+}
+
+#secondNav {
+  background-color: rgb(187, 69, 69);
+  width: 100%;
+  height: 65px;
+  box-shadow: 0 5px 5px;
+}
+
+#navMenu {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  margin: 20px 0 22px 0;
+  float: right;
+}
+
+#navMenu span {
+  padding: 20px 30px;
+}
+
+#navMenu a {
+  text-decoration: none;
+  color: white;
+}
+
+#navMenu span:hover {
+  background-color: rgb(37, 89, 138);
+  font-weight: 600;
+  padding: 23px 30px;
+}
+
+#greetContainer {
+  background: linear-gradient(60deg, #4e2c2c, #291e1f 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#greetText {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+}
+
+#subheading {
+  color: red;
+  font-weight: 400;
+  margin: 10px;
+}
+
+#table {
+  background-color: #45567d;
+  width: 100%;
+}
+
+#headLine {
+  max-width: 700px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  padding-top: 40px;
+}
+
+#row {
+  width: 100%;
+}
+
+#unit {
+  margin: 0 10%;
+  margin-bottom: 30px;
+}
+
+#imageLink {
+  width: 100%;
+}
+
+#description {
+  position: relative;
+  background-color: black;
+  transition: all 0.5s;
+  border: none;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  opacity: 0.8;
+  padding: 20px;
+  bottom: 72px;
+}
+
+#showAll {
+  background-color: black;
+  transition: all 0.5s;
+  font-size: 1rem;
+  color: white;
+  margin: 40px 38%;
+  padding: 20px;
+  border: none;
+  opacity: 0.7;
+  width: 24%;
+}
+
+#description:hover,
+#showAll:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#description span,
+#showAll span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#description span:after,
+#showAll span:after {
+  position: absolute;
+  content: "\00bb";
+  transition: 0.5s;
+  right: -20px;
+  color: rgb(187, 69, 69);
+  opacity: 0;
+  top: 0;
+}
+
+#showAll:hover {
+  background-color: rgb(187, 69, 69);
+}
+
+#showAll span:after {
+  color: white;
+}
+
+#description:hover span,
+#showAll:hover span {
+  padding-right: 25px;
+}
+
+#description:hover span:after,
+#showAll:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  background-color: #303841;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 110vh;
+  width: 100%;
+}
+
+#letsWork {
+  font-size: 4rem;
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#coffee {
+  margin-bottom: 50px;
+  color: lightgray;
+  font-weight: 300;
+  padding: 0;
+}
+
+#socialMedia {
+  width: 95%;
+  margin: 0 5%;
+}
+
+#socialMedia a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+#socialMedia a:hover {
+  transform: translateY(5px);
+  transition: all 0.5s;
+}
+
+#socialMedia a:after {
+  transform: translateY(-5px);
+  color: white;
+  transition: 0.5s;
+}
+
+#bottomLine {
+  background-color: rgb(187, 69, 69);
+  margin-top: 150px;
+  height: 10px;
+  border: none;
+}
+
+#finalPart td {
+  font-size: 1.2rem;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+
+#callImage,
+#twitterImage,
+#gitHubImage,
+#facebookImage,
+#smartphoneImage,
+#mailImage {
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 992px) {
+  #unit {
+    margin: 0 1.6% 40px 1.6%;
+    width: 30%;
+    float: left;
+  }
+
+  #row {
+    height: 100vh;
+  }
+
+  #imageLink {
+    height: 400px;
+  }
+
+  #description {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 67px;
+  }
+
+  #showAll {
+    margin: 20px 42%;
+    width: 16%;
+  }
+
+  #socialMedia {
+    width: 95%;
+    margin: 0 5%;
+  }
+
+  #socialMedia a {
+    font-size: 1.8rem;
+    padding: 10px 0%;
+  }
+
+  #callImage,
+  #twitterImage,
+  #gitHubImage,
+  #facebookImage,
+  #smartphoneImage,
+  #mailImage {
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+
+  #finalPart {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 25%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  #unit {
+    margin: 0 2.5%;
+    width: 45%;
+    float: left;
+  }
+
+  #row {
+    height: 100vh;
+  }
+
+  #imageLink {
+    height: 300px;
+  }
+
+  #description {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 67px;
+  }
+
+  #socialMedia {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+
+  #socialMedia a {
+    font-size: 1.3rem;
+    padding: 10px 5%;
+  }
+
+  #callImage,
+  #twitterImage,
+  #gitHubImage,
+  #facebookImage,
+  #smartphoneImage,
+  #mailImage {
+    float: left;
+    width: 30px;
+    height: 30px;
+  }
+}
