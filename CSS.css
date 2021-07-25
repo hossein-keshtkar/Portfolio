@@ -233,7 +233,7 @@ footer {
   justify-content: center;
   text-align: center;
   color: white;
-  height: 110vh;
+  height: 140vh;
   width: 100%;
 }
 
@@ -253,6 +253,7 @@ footer {
 }
 
 #socialMedia {
+  display: none;
   width: 95%;
   margin: 0 5%;
 }
@@ -264,12 +265,14 @@ footer {
   float: left;
 }
 
-#socialMedia a:hover {
+#socialMedia a:hover,
+#secondSocialMedia div:hover {
   transform: translateY(5px);
   transition: all 0.5s;
 }
 
-#socialMedia a:after {
+#socialMedia a:after,
+#secondSocialMedia div:after {
   transform: translateY(-5px);
   color: white;
   transition: 0.5s;
@@ -296,9 +299,20 @@ footer {
 #facebookImage,
 #smartphoneImage,
 #mailImage {
-  float: left;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 8px;
+}
+
+#secondSocialMedia div {
+  padding: 20px;
+}
+
+#secondSocialMedia a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -328,6 +342,7 @@ footer {
   }
 
   #socialMedia {
+    display: inline-table;
     width: 95%;
     margin: 0 5%;
   }
@@ -343,9 +358,15 @@ footer {
   #facebookImage,
   #smartphoneImage,
   #mailImage {
+    position: relative;
+    top: -2px;
     float: left;
     width: 40px;
     height: 40px;
+  }
+
+  #secondSocialMedia {
+    display: none;
   }
 
   #finalPart {
@@ -378,6 +399,7 @@ footer {
   }
 
   #socialMedia {
+    display: inline-table;
     width: 95%;
     margin: 0 2.5%;
   }
@@ -393,8 +415,14 @@ footer {
   #facebookImage,
   #smartphoneImage,
   #mailImage {
+    position: relative;
+    top: -2px;
     float: left;
     width: 30px;
     height: 30px;
+  }
+
+  #secondSocialMedia {
+    display: none;
   }
 }
